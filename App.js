@@ -5,7 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text> 🍕 Pizza Delivery! </Text>
+      <Text style={styles.title_text}> 🍕 Pizza Delivery </Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -17,5 +17,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  
+  title_text: {
+    fontSize: 27,
+    
   },
 });
