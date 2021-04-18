@@ -1,19 +1,41 @@
 import React from "react";
 
-import { SafeAreaView, StatusBar, Text, FlatList } from "react-native";
+import {
+  SafeAreaView,
+  StatusBar,
+  Text,
+  FlatList,
+  StyleSheet,
+  TouchableWithoutFeedback,
+} from "react-native";
 import Item from "./Item";
 
 export default function Servicos() {
-  return <SafeAreaView>
-        <Text>🍕 Pizza Delivery</Text>
-    <StatusBar />
-    <FlatList
-      data={servicos}
-      renderItem={({item}) => <Item {...item}  />}
-      keyExtractor={({id}) => String(id)}
-    />
-  </SafeAreaView>
+  return (
+    <SafeAreaView>
+      <Text style={estilo.textItem}>🍕 Pizza Delivery</Text>
+      <StatusBar backgroundColor="#000" barStyle="light-content" />
+      <FlatList
+        data={servicos}
+        renderItem={({ item }) => <Item {...item} />}
+        keyExtractor={({ id }) => String(id)}
+      />
+    </SafeAreaView>
+  );
 }
+
+const estilo = StyleSheet.create({
+  textItem: {
+    color: "#000",
+    fontSize: 30,
+    textAlign: "center",
+    backgroundColor: "#ffda85",
+    height: 69,
+    padding: 12,
+    borderBottomRightRadius: 15,
+    borderBottomLeftRadius: 15,
+  },
+});
 
 const servicos = [
   {
