@@ -4,17 +4,15 @@ import { SafeAreaView, StatusBar, Text, FlatList } from "react-native";
 import Item from "./Item";
 
 export default function Servicos() {
-  return (
-    <SafeAreaView>
-      <StatusBar></StatusBar>
-      <Text>🍕 Pizza Delivery</Text>
-      <FlatList
-        data={servicos}
-        renderItem={({item}) => <Item {...item} />}
-        keyExtractor={({id}) => String(id)}
-      />
-    </SafeAreaView>
-  );
+  return <SafeAreaView>
+        <Text>🍕 Pizza Delivery</Text>
+    <StatusBar />
+    <FlatList
+      data={servicos}
+      renderItem={({item}) => <Item {...item}  />}
+      keyExtractor={({id}) => String(id)}
+    />
+  </SafeAreaView>
 }
 
 const servicos = [
