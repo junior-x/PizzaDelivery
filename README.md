@@ -5,7 +5,7 @@ _Custom service developed in React-Native and Expo.App_
 v 0.0.3
 
 *Direct entrance on the list and item score scheme.*
-![Image of Screen](/src/assets/image/screen-v2.png)
+![Image of Screen](/assets/image/screen-v2.png)
 
 
 v 0.0.0
