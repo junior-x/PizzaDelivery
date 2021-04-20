@@ -11,7 +11,7 @@ v 0.0.3
 
 v 0.0.0
 
-First screen from React-Native creation.
+*First screen from React-Native creation.*
 
 ![Image of App](/assets/image/screen-v1.PNG)
 
