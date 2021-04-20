@@ -1,4 +1,6 @@
 import React from "react";
+import Item from "./Item";
+import estilosGlobal from "../../estilos";
 
 import {
   SafeAreaView,
@@ -6,20 +8,25 @@ import {
   Text,
   FlatList,
   StyleSheet,
-  TouchableWithoutFeedback,
+  KeyboardAvoidingView,
+  Plataform,
 } from "react-native";
-import Item from "./Item";
 
 export default function Servicos() {
   return (
-    <SafeAreaView>
-      <Text style={estilo.textItem}>🍕 Pizza Delivery</Text>
+    <SafeAreaView style={estilosGlobal.preencher}>
+      <Text style={estilo.textItem}>🍕</Text>
       <StatusBar backgroundColor="#000" barStyle="light-content" />
-      <FlatList
-        data={servicos}
-        renderItem={({ item }) => <Item {...item} />}
-        keyExtractor={({ id }) => String(id)}
-      />
+      <KeyboardAvoidingView
+        behavior={Plataform.OS == "ios" ? "padding" : "height"}
+        style={estilosGlobal.preencher}
+      >
+        <FlatList
+          data={servicos}
+          renderItem={({ item }) => <Item {...item} />}
+          keyExtractor={({ id }) => String(id)}
+        />
+      </KeyboardAvoidingView>
     </SafeAreaView>
   );
 }
