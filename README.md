@@ -23,7 +23,7 @@ Install Expo in the directory using
 expo install
 ------
 
-After get the package just need to run Expo.appp
+After get the package just need to run Expo.app
 ------
 expo start
 ------
