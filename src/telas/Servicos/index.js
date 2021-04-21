@@ -8,21 +8,39 @@ import Item from './Item';
 const servicos = [
   {
     id: 1,
-    nome: "Banho",
+    nome: "Pizza Calabresa",
     preco: 79.9,
-    descricao: "NÃO DE BANHO NO SEU GATO! Mas se precisar nós damos."
+    descricao: "Molho de Tomate, Queijo, Cebola, Calabresa, Oregano e Borda de Catupiry."
   },
   {
     id: 2,
-    nome: "Vacina V4",
+    nome: "Pizza 4-Queijos",
     preco: 89.9,
-    descricao: "Uma dose da vacina V4. Seu gato precisa de duas."
+    descricao: "Molho de Tomate, Queijos: Mussarela, Provolone, Catupiry e Requeijão."
   },
   {
     id: 3,
-    nome: "Vacina Antirrábica",
+    nome: "Pizza 5-Queijos",
     preco: 99.9,
-    descricao: "Uma dose da vacina antirrábica. Seu gato precisa de uma por ano."
+    descricao: "Molho de Tomate, Queijos: Mussarela, Provolone, Catupiry, Cheedar e Gorgonzola."
+  },
+  {
+    id: 4,
+    nome: "X-Pizza",
+    preco: 120.9,
+    descricao: "Molho de Tomate, Queijos: Mussarela, Provolone, Requeijão, Cheedar e Gorgonzola, Borda de Catupiry."
+  },
+  {
+    id: 5,
+    nome: "Pizza Beacon",
+    preco: 72,
+    descricao: "Molho de Tomate, Queijo Mussarela, Cebola, Alho, Beacon e Borda de Catupiry."
+  },
+  {
+    id: 6,
+    nome: "Pizza-Vulcan",
+    preco: 90,
+    descricao: "Molho de Tomate, Alho, Cebola, Pimentas, Beacon, Calabresa, Gorgonzola e Borda de Cheedar."
   }
 ];
 

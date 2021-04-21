@@ -9,24 +9,24 @@ import Item from './Item';
 const servicos = [
   {
     id: 1,
-    nome: "Banho",
+    nome: "Pizza Calabresa",
     preco: 79.9,
-    descricao: "NÃO DE BANHO NO SEU GATO! Mas se precisar nós damos.",
-    quantidade: 1
+    descricao: "Molho de Tomate, Queijo, Cebola, Calabresa, Oregano e Borda de Catupiry.",
+    quantidade: 1,
   },
   {
-    id: 2,
-    nome: "Vacina V4",
-    preco: 89.9,
-    descricao: "Uma dose da vacina V4. Seu gato precisa de duas.",
-    quantidade: 2
+    id: 4,
+    nome: "X-Pizza",
+    preco: 120.9,
+    descricao: "Molho de Tomate, Queijos: Mussarela, Provolone, Requeijão, Cheedar e Gorgonzola, Borda de Catupiry.",
+    quantidade: 3,
   },
   {
-    id: 3,
-    nome: "Vacina Antirrábica",
-    preco: 99.9,
-    descricao: "Uma dose da vacina antirrábica. Seu gato precisa de uma por ano.",
-    quantidade: 1
+    id: 6,
+    nome: "Pizza-Vulcan",
+    preco: 90,
+    descricao: "Molho de Tomate, Alho, Cebola, Pimentas, Beacon, Calabresa, Gorgonzola e Borda de Cheedar.",
+    quantidade: 1,
   }
 ];
 
