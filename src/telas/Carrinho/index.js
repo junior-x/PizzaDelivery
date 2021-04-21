@@ -1,14 +1,17 @@
 import React from "react";
 import Item from "./Item";
-import estilosGlobal from "../../estilos";
+
+import { FlatList, StyleSheet } from "react-native";
 import TelaPadrao from "../../componentes/TelaPadrao";
+import StatusCarrinho from "../../componentes/StatusCarrinho";
 
+export default function Carrinho() {
 
-import { FlatList } from "react-native";
+  const total = servicos.reduce((soma, {preco, quantidade}) => soma, (preco * quantidade), 0)
 
-export default function Servicos() {
   return (
     <TelaPadrao>
+    <StatusCarrinho total={total}/>
       <FlatList
         data={servicos}
         renderItem={({ item }) => <Item {...item} />}
@@ -37,6 +40,7 @@ const servicos = [
     nome: "Pizza - Calabresa.",
     preco: 45,
     descricao: "Molho de tomate, Calabresa, Queijo, Cebola, Borda de Cheedar.",
+    quantidade: 1,
   },
   {
     id: 2,
@@ -44,6 +48,7 @@ const servicos = [
     preco: 51,
     descricao:
       "Molho de Tomate, Queijo Provolone, Queijo: Mussarela, Requeijão, Cheedar, Borda de Catupiry.",
+    quantidade: 2,
   },
   {
     id: 3,
@@ -51,6 +56,7 @@ const servicos = [
     preco: 60,
     descricao:
       "Molho de Tomate, Queijo Provolone, Queijos: Mussarela, Requeijão, Cheedar, Parmesão, Gorgonzola, Borda de Catupiry.",
+    quantidade: 1,
   },
   {
     id: 4,

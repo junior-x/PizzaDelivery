@@ -1,20 +1,33 @@
 import React from "react";
 import Item from "./Item";
 import estilosGlobal from "../../estilos";
-import TelaPadrao from "../../componentes/TelaPadrao";
 
-
-import { FlatList } from "react-native";
+import {
+  SafeAreaView,
+  StatusBar,
+  Text,
+  FlatList,
+  StyleSheet,
+  KeyboardAvoidingView,
+  Plataform,
+} from "react-native";
 
 export default function Servicos() {
   return (
-    <TelaPadrao>
-      <FlatList
-        data={servicos}
-        renderItem={({ item }) => <Item {...item} />}
-        keyExtractor={({ id }) => String(id)}
-      />
-    </TelaPadrao>
+    <SafeAreaView style={estilosGlobal.preencher}>
+      <Text style={estilo.textItem}>🍕</Text>
+      <StatusBar backgroundColor="#000" barStyle="light-content" />
+      <KeyboardAvoidingView
+        behavior={Plataform.OS == "ios" ? "padding" : "height"}
+        style={estilosGlobal.preencher}
+      >
+        <FlatList
+          data={servicos}
+          renderItem={({ item }) => <Item {...item} />}
+          keyExtractor={({ id }) => String(id)}
+        />
+      </KeyboardAvoidingView>
+    </SafeAreaView>
   );
 }
 
