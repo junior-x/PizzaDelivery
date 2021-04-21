@@ -7,6 +7,7 @@ export default StyleSheet.create({
 });
 
 export const cores = {
+  pink: '#ff2652',
   roxo: '#A050BE',
   laranja: '#FABE50',
   escuro: '#555555',
