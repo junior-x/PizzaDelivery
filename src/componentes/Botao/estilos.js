@@ -19,6 +19,6 @@ export default (pequeno, invertido) => StyleSheet.create({
   valor: {
     fontWeight: 'bold',
     textAlign: 'center',
-    color: invertido ? cores.roxo : cores.claro,
+    color: invertido ? cores.roxo : cores.laranja,
   }
 });

@@ -7,7 +7,7 @@ import Botao from '../../../componentes/Botao';
 
 import estilos from './estilos';
 
-function Item({nome, preco, descricao}) {
+export default function Item({nome, preco, descricao}) {
   const [quantidade, setQuantidade] = useState(1);
   const [total, setTotal] = useState(preco);
   const [expandir, setExpandir] = useState(false);
@@ -58,5 +58,3 @@ function Item({nome, preco, descricao}) {
     <View style={estilos.divisor} />
   </>
 }
-
-export default Item;

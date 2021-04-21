@@ -3,7 +3,7 @@ import React from 'react';
 import { TextInput } from 'react-native';
 import estilosPadrao from './estilos';
 
-function CampoInteiro({valor, estilos, acao}) {
+export default function CampoInteiro({valor, estilos, acao}) {
   const atualiza = (novoValor, acaoRetorno) => {
     const verificaInteiro = novoValor.match(/^[0-9]*$/);
     if (!verificaInteiro) return;
@@ -23,5 +23,3 @@ function CampoInteiro({valor, estilos, acao}) {
     value={numeroEmTexto}
   />
 }
-
-export default CampoInteiro;
