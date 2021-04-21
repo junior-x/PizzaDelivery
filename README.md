@@ -1,4 +1,4 @@
-# Pizza Delivery 🍕🍕🍕 
+# Pizza Delivery 🍕
 
 _Custom service developed in React-Native and Expo.App_
 
