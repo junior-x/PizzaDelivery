@@ -47,5 +47,6 @@ export default StyleSheet.create({
   },
   quantidade: {
     width: 42,
+    
   }
 });
