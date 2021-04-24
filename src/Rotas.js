@@ -1,6 +1,8 @@
 import React from "react";
 import {NavigationContainer} from "@react-navigation/native";
 import { createBottomTabNavigator} from "@react-navigation/bottom-tabs";
+import PizzaIcon from "../assets/ico/pizza.svg";
+import ShopCart from "../assets/ico/shopping-cart.svg";
 
 import Servicos from "./telas/Servicos";
 import Carrinho from "./telas/Carrinho"
@@ -32,9 +34,10 @@ function Rotas() {
           },
           keyboardHidesTabBar: true,
         }}>
-        <Tab.Screen name="Serviços" component={Servicos} />
+        <Tab.Screen  name="Pizzas" component={Servicos} />
         <Tab.Screen name="Carrinho" component={Carrinho} />
       </Tab.Navigator>
     </NavigationContainer>
   }
+
 export default Rotas;
