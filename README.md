@@ -4,7 +4,7 @@ _Custom service developed in React-Native and Expo.App_
 
 v 0.0.6
 
-...
+*Now I got it some Tab.Navigator to switch between Pizzas and ShopCart.*
 
 ![Image of Screen](/assets/image/screen-v3.png)
 
