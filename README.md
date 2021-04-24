@@ -1,6 +1,12 @@
-# Pizza Delivery 🍕🍕🍕 
+# Pizza Delivery 🍕
 
 _Custom service developed in React-Native and Expo.App_
+
+v 0.0.6
+
+...
+
+![Image of Screen](/assets/image/screen-v3.png)
 
 v 0.0.3
 
