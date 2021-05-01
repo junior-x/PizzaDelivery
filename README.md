@@ -16,6 +16,8 @@ _Custom service developed in React-Native and Expo.App_
 
 `v 0.0.0`
 
+*Just the basics for the start.*
+
 ![Image of App](/assets/image/screen-v1.PNG)
 
 ---------
